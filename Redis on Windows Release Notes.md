@@ -1,5 +1,10 @@
 MSOpenTech Redis on Windows 3.2 Release Notes
 =============================================
+
+--[ Redis on Windows 3.2.101 ] Release date: Mar 07 2025
+
+Latest build
+
 --[ Redis on Windows 3.2.100 ] Release date: Jul 01 2016
 
  This is the first stable release of Redis on Windows 3.2.
