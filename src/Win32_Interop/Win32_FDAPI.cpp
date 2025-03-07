@@ -34,6 +34,7 @@
 #include "Win32_Common.h"
 #include "Win32_Error.h"
 #include "Win32_Assert.h"
+#include <system_error>
 
 using namespace std;
 
@@ -117,7 +118,7 @@ void EnableFastLoopback(SOCKET socket) {
         DWORD result_byte_count = -1;
         int result = f_WSAIoctl(socket, SIO_LOOPBACK_FAST_PATH, &enabled, sizeof(enabled), NULL, 0, &result_byte_count, NULL, NULL);
         if (result != 0) {
-            throw std::system_error(f_WSAGetLastError(), system_category(), "WSAIoctl failed");
+            throw system_error(f_WSAGetLastError(), system_category(), "WSAIoctl failed");
         }
     }
 }
