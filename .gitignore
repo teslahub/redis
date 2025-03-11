@@ -49,3 +49,5 @@ msvs/BuildRelease
 msvs/Documentation
 tests/tmp/
 
+# Visual Studio 2015 cache/options directory
+.vs/
